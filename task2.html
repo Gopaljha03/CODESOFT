@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: #0077cc;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        header nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px 20px;
+            background-color: #e6f0ff;
+        }
+
+        .hero-text {
+            max-width: 600px;
+        }
+
+        .hero-text h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #0077cc;
+        }
+
+        .hero-text p {
+            margin-bottom: 20px;
+        }
+
+        .hero-text a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #0077cc;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .hero img {
+            max-width: 400px;
+            border-radius: 10px;
+        }
+
+        /* Features Section */
+        .features {
+            display: flex;
+            justify-content: space-around;
+            padding: 50px 20px;
+            flex-wrap: wrap;
+        }
+
+        .feature {
+            background-color: white;
+            padding: 20px;
+            margin: 10px;
+            width: 250px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .feature h3 {
+            color: #0077cc;
+            margin-bottom: 15px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer a {
+            color: #00ccff;
+            text-decoration: none;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero img {
+                margin-top: 20px;
+            }
+
+            .features {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>My Landing Page</h1>
+        <nav>
+            <a href="#hero">Home</a>
+            <a href="#features">Features</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-text">
+            <h2>Welcome to My Website</h2>
+            <p>This is a beginner-friendly landing page project to practice HTML and CSS. Explore features, projects, and contact info below.</p>
+            <a href="#features">Explore Features</a>
+        </div>
+        <img src="hero-image.jpg" alt="Hero Image">
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="feature">
+            <h3>Responsive Design</h3>
+            <p>Fully responsive layout that looks great on any device.</p>
+        </div>
+        <div class="feature">
+            <h3>Easy to Customize</h3>
+            <p>Modify colors, fonts, and images to make it your own.</p>
+        </div>
+        <div class="feature">
+            <h3>Modern Look</h3>
+            <p>Clean and professional design suitable for any project.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: yourname@example.com</p>
+        <p>Phone: +91-XXXXXXXXXX</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Your Name. All rights reserved. <a href="#">Privacy Policy</a></p>
+    </footer>
+
+</body>
+</html>
